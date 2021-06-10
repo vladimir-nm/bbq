@@ -1,0 +1,39 @@
+ru:
+  activerecord:
+    models:
+      user:
+      event:
+    attributes:
+      user:
+        email: 'Логин (email)'
+        name: 'Ваше имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтвеждение пароля'
+      event:
+        title: 'Событие'
+        address: 'Адрес'
+        datetime: 'Время проведения'
+        description: 'Описание события'
+
+  devise:
+    registrations:
+      new: 'Регистрация'
+      submit: 'Зарегистрироваться'
+    sessions:
+      new: 'Авторизация'
+      submit: 'Авторизоваться'
+    passwords:
+      new: 'Забыли ваш пароль?'
+      submit: 'Отправить инструкцию по сбросу пароля'
+  errors:
+    messages:
+      not_saved:
+        one: 'Cохранение не удалось из-за %{count} ошибки'
+        few: 'Cохранение не удалось из-за %{count} ошибок'
+        many: 'Cохранение не удалось из-за %{count} ошибок'
+        other: 'Cохранение не удалось из-за %{count} ошибки'
+  password_length:
+    one: 'Не менее %{count} символа'
+    few: 'Не менее %{count} символов'
+    many: 'Не менее %{count} символов'
+    other: 'Не менее %{count} символа'

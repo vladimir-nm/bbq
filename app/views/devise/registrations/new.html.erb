@@ -1,0 +1,33 @@
+<h2><%= t('devise.registrations.new') %></h2>
+
+<div class="row">
+  <div class='col-md-6 buffer-top'>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+      </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em><%= t(:password_length, count: @minimum_password_length) %></em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
+  </div>
+
+      <div class="form-group">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit t("devise.registrations.submit"), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <div class="container"> 
+  <head>
+    <title>Bbq</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><%= link_to "BBQ!", root_path, class: 'navbar-brand' %></h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Features</a>
+      <a class="p-2 text-dark" href="#">Enterprise</a>
+      <a class="p-2 text-dark" href="#">Support</a>
+      <a class="p-2 text-dark" href="#">Pricing</a>
+  </nav>
+      <% if user_signed_in? %>
+        <a class="m-1"> <%= link_to 'Профиль', current_user, class:"btn btn-info" %></a>
+        <a class="m-1"> <%= link_to 'Выйти', destroy_user_session_path,
+                method: :delete, class:"btn btn-warning"%></a>
+      <% else %>
+        <a class="m-1"><%= link_to "Войти", new_user_session_path, class:"btn btn-outline-primary" %></a>
+        <a class="m-1"> <%= link_to "Зарегистрироваться", new_user_registration_path, class:"btn btn-primary"%></a>
+    <% end %>
+  </div>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <p>&copy; Company 2021</p>
+  </footer>
+
+  </div>
+</html>
