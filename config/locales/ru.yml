@@ -1,27 +1,27 @@
 ru:
   activerecord:
     models:
-      user:
-      event:
+      user: 'Пользователь'
+      event: 'Событие'      
     attributes:
       user:
-        email: 'Логин (email)'
         name: 'Ваше имя'
         password: 'Пароль'
         password_confirmation: 'Подтвеждение пароля'
-      event:
-        title: 'Событие'
+        remember_me: 'Запомнить меня'        
+        email: 'Логин (email)'
+      event:        
         address: 'Адрес'
         datetime: 'Время проведения'
         description: 'Описание события'
-
+        title: 'Событие'        
   devise:
     registrations:
       new: 'Регистрация'
       submit: 'Зарегистрироваться'
     sessions:
       new: 'Авторизация'
-      submit: 'Авторизоваться'
+      submit: 'Авторизоваться'      
     passwords:
       new: 'Забыли ваш пароль?'
       submit: 'Отправить инструкцию по сбросу пароля'
@@ -37,3 +37,18 @@ ru:
     few: 'Не менее %{count} символов'
     many: 'Не менее %{count} символов'
     other: 'Не менее %{count} символа'
+  event:
+    back: 'вернуться'
+    edit: 'Редактировать событие'
+    index: 'События'
+    new: 'Создать новое событие'
+    or: 'или'
+    save: 'Сохранить'
+  app:
+    company: 'Хороший программист'
+    name: 'BBQ!'
+  user:
+    current_user: 'Профиль'
+    destroy_user_session_path: 'Выйти'
+    sign_in: 'Войти'
+    sign_up: 'Зарегистрироваться'

@@ -22,7 +22,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'Сохранить', class: 'btn btn-primary' %>
-    или <%= link_to 'вернуться', :back %>
+    <%= f.submit t('event.save'), class: 'btn btn-primary' %>
+    <%= t('event.or') %> <%= link_to t('event.back'), :back %>
   </div>
 <% end %>

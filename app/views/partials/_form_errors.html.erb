@@ -1,10 +1,9 @@
-<%# Универсальный паршиал отображения ошибок валидации любой модели %>
 <% errors = model.errors %>
 
 <% if errors.any? %>
   <div class="alert alert-danger">
-    <div class="lead buffer-bottom">
-      В вашей форме <%= errors.count %> ошибок
+    <div class="lead buffer-bottom">      
+      <%= t('errors.messages.not_saved', count: errors.count)%>        
     </div>
 
     <ul>
