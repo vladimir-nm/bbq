@@ -51,7 +51,11 @@ ru:
     company: 'Хороший программист'
     name: 'BBQ!'
   user:
+    change_password: 'Сменить пароль'
     current_user: 'Профиль'
     destroy_user_session_path: 'Выйти'
+    no_events: 'Пользователь пока не организовал ни одного события'
+    organized: 'Организовал'
+    profile_edit: 'Редактирование профиля'
     sign_in: 'Войти'
     sign_up: 'Зарегистрироваться'
