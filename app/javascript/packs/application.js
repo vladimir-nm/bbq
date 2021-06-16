@@ -11,6 +11,7 @@ import "channels"
 import 'bootstrap'
 import '../stylesheets/application'
 import '../stylesheets/events.css'
+import '@fortawesome/fontawesome-free/css/all'
 
 const images = require.context('../images', true)
 
