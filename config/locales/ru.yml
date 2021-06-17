@@ -73,6 +73,7 @@ ru:
       body: 'Сообщения'
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
       send: 'Отправить'
+      user_name: 'Ваше имя'
   subscriptions:
     created: 'Вы подписаны на это событие'
     destroyed: 'Участник отписан'
@@ -81,3 +82,5 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
       subscribe: 'Подписаться'
+      user_name: 'Ваше имя'
+      user_email: 'Электронная почта'
