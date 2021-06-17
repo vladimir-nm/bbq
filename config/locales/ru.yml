@@ -47,9 +47,6 @@ ru:
     new: 'Создать новое событие'
     or: 'или'
     save: 'Сохранить'
-  app:
-    company: 'Хороший программист'
-    name: 'BBQ!'
   user:
     change_password: 'Сменить пароль'
     current_user: 'Профиль'
@@ -59,17 +56,28 @@ ru:
     profile_edit: 'Редактирование профиля'
     sign_in: 'Войти'
     sign_up: 'Зарегистрироваться'
+    
+  app:
+    company: 'Хороший программист'
+    name: 'BBQ!'
+  about_the_event:
+    invitation: 'Зовет:'
+    agree: 'Пойдут:'
+    i_agree: 'Я пойду:'
   comments:
     destroyed: 'Комментарий удален'
     created: 'Ваш комментарий добавлен'
     error: 'Ошибка с комментарием'
   comments:
     comment:
+      body: 'Сообщения'
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-  subscriptions:
-    subscription:
-      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      send: 'Отправить'
   subscriptions:
     created: 'Вы подписаны на это событие'
     destroyed: 'Участник отписан'
     error: 'Подписка/отписка не сработала'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      subscribe: 'Подписаться'
