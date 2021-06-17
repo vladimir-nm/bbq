@@ -15,10 +15,10 @@
           </div>
 
           <% if current_user_can_edit?(@event) %>
-          <div class="buffer-both">
-            <%= link_to t('event.change'), edit_event_path(@event), class: 'btn btn-primary' %>
-            <%= link_to t('event.delete'), event_path(@event), method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-danger' %>
-          </div>
+            <div class="buffer-both">
+              <%= link_to t('event.change'), edit_event_path(@event), class: 'btn btn-primary' %>
+              <%= link_to t('event.delete'), event_path(@event), method: :delete, data: { confirm: t('are_you_sure') }, class: 'btn btn-danger' %>
+            </div>
           <% end %>
         </div>
       </div>
@@ -52,8 +52,7 @@
           </p>
         </div>
       </div>
-      <div class="event-subscription-form">
-        <h4><%= t('about_the_event.i_agree')%></h4>
+      <div class="event-subscription-form">        
         <div>
           <%= render partial: 'subscriptions/form', locals: {
             subscription: @new_subscription || @event.subscriptions.build
