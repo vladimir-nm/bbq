@@ -43,8 +43,9 @@
         <h4><%= t('about_the_event.invitation')%></h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
+      <% unless @event.subscribers.blank? || @event.user == current_user%>
       <div class="event-subscriptions">
-        <h4><%= t('about_the_event.agree')%></h4>
+        <h4><%= t('about_the_event.agree')%></h4>        
         <div>
           <p>
           <%= render partial: 'subscriptions/subscription',
@@ -52,12 +53,15 @@
           </p>
         </div>
       </div>
-      <div class="event-subscription-form">        
+      <% end %>
+      <div class="event-subscription-form">
+        <% unless @event.user == current_user %>           
         <div>
           <%= render partial: 'subscriptions/form', locals: {
             subscription: @new_subscription || @event.subscriptions.build
           } %>
         </div>
+        <% end %>
       </div>
     </div>
   </div>
