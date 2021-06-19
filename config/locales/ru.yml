@@ -2,26 +2,26 @@ ru:
   activerecord:
     models:
       user: 'Пользователь'
-      event: 'Событие'      
+      event: 'Событие'
     attributes:
       user:
         name: 'Ваше имя'
         password: 'Пароль'
         password_confirmation: 'Подтвеждение пароля'
-        remember_me: 'Запомнить меня'        
+        remember_me: 'Запомнить меня'
         email: 'Логин (email)'
       event:        
         address: 'Адрес'
         datetime: 'Время проведения'
         description: 'Описание события'
-        title: 'Событие'        
+        title: 'Событие'
   devise:
     registrations:
       new: 'Регистрация'
       submit: 'Зарегистрироваться'
     sessions:
       new: 'Авторизация'
-      submit: 'Авторизоваться'      
+      submit: 'Авторизоваться'
     passwords:
       new: 'Забыли ваш пароль?'
       submit: 'Отправить инструкцию по сбросу пароля'
