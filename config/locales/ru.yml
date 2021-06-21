@@ -22,6 +22,12 @@ ru:
         datetime: 'Время проведения'
         description: 'Описание события'
         title: 'Событие'
+    errors: 
+      models: 
+        subscription:
+          attributes:
+            base:
+              event_owner_verification: 'Вы не можете подписаться на свое событие'
   devise:
     registrations:
       new: 'Регистрация'
