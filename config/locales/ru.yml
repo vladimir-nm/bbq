@@ -4,6 +4,13 @@ ru:
       user: 'Пользователь'
       event: 'Событие'
     attributes:
+      comment:
+        body: 'Комментарий'
+        user_name: 'Никнейм'        
+      subscription:
+        user: 'Пользователь'
+        user_name: 'Никнейм'
+        user_email: 'Адрес электронной почты'
       user:
         name: 'Ваше имя'
         password: 'Пароль'
