@@ -28,6 +28,7 @@ ru:
           attributes:
             base:
               event_owner_verification: 'Вы не можете подписаться на свое событие'
+              verification_email_registered: 'Данный адрес электронной почты уже зарегестрирован'
   devise:
     registrations:
       new: 'Регистрация'
