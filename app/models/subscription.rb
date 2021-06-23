@@ -1,9 +1,6 @@
 class Subscription < ApplicationRecord
   belongs_to :event
-  belongs_to :user, optional: true
-
-  # Обязательно должно быть событие
-  validates :event, presence: true
+  belongs_to :user, optional: true 
 
   # Проверки user_name и user_email выполняются,
   # только если user не задан
@@ -15,7 +12,6 @@ class Subscription < ApplicationRecord
   validates :user_email, uniqueness: {scope: :event_id}, unless: -> { user.present? }
   validate :event_owner_verification, if: -> { user.present? }
   validate :verification_email_registered, unless: -> { user.present? }
-
 
   def user_name
     if user.present?
@@ -32,6 +28,8 @@ class Subscription < ApplicationRecord
       super
     end
   end
+
+  private
 
   def event_owner_verification
     if event.user == user
