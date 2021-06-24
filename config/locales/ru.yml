@@ -33,9 +33,16 @@ ru:
     registrations:
       new: 'Регистрация'
       submit: 'Зарегистрироваться'
+      signed_up: "Добро пожаловать! Вы успешно зарегистрировались."
+    failure:
+      invalid: "Неверный %{authentication_keys} или пароль."
+      unauthenticated: "Вам необходимо войти в систему или зарегистрироваться."
     sessions:
       new: 'Авторизация'
       submit: 'Авторизоваться'
+      signed_in: "Вход в систему выполнен."
+      signed_out: "Выход из системы выполнен."
+      already_signed_out: "Выход из системы выполнен."
     passwords:
       new: 'Забыли ваш пароль?'
       submit: 'Отправить инструкцию по сбросу пароля'
@@ -70,6 +77,7 @@ ru:
     profile_edit: 'Редактирование профиля'
     sign_in: 'Войти'
     sign_up: 'Зарегистрироваться'
+    update : 'Профиль обновлен'
     
   app:
     company: 'Хороший программист'
@@ -79,22 +87,26 @@ ru:
     agree: 'Пойдут:'
     i_agree: 'Я пойду:'
   comments:
-    destroyed: 'Комментарий удален'
-    created: 'Ваш комментарий добавлен'
-    error: 'Ошибка с комментарием'
-  comments:
     comment:
       body: 'Сообщения'
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
       send: 'Отправить'
       user_name: 'Ваше имя'
   subscriptions:
-    created: 'Вы подписаны на это событие'
-    destroyed: 'Участник отписан'
-    error: 'Подписка/отписка не сработала'
-  subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
       subscribe: 'Подписаться'
       user_name: 'Ваше имя'
       user_email: 'Электронная почта'
+  events:
+    create: 'Событие успешно создано'
+    destroy: 'Событие удалено'
+    success: 'Событие успешно обновлено'   
+  controllers:
+      comments:
+        destroyed: 'Комментарий удален'
+        created: 'Ваш комментарий добавлен'
+        error: 'Ошибка с комментарием'
+      subscriptions:
+        created: 'Вы подписались на данное событие'
+        destroyed: 'Подписка удалена'
