@@ -42,24 +42,25 @@
       <div class="event-owner">
         <h4><%= t('about_the_event.invitation')%></h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
-      </div>      
+      </div>
+      <% unless @event.subscribers.blank? %>
       <div class="event-subscriptions">
-        <h4><%= t('about_the_event.agree')%></h4>        
+        <h4><%= t('about_the_event.agree')%></h4>
         <div>
           <p>
           <%= render partial: 'subscriptions/subscription',
             collection: @event.subscriptions.except(@new_subscription) %>
           </p>
         </div>
-      </div>     
-      <div class="event-subscription-form">                  
+      </div>
+      <% end %>
+      <div class="event-subscription-form">
         <div>
           <%= render partial: 'subscriptions/form', locals: {
             subscription: @new_subscription || @event.subscriptions.build
           } %>
-        </div>        
+        </div>
       </div>
     </div>
   </div>
-  
 </div>
