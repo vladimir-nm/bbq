@@ -1,17 +1,21 @@
 ru:
   activerecord:
     models:
+      photo: 'Фотография'
       user: 'Пользователь'
       event: 'Событие'
     attributes:
       comment:
         body: 'Комментарий'
-        user_name: 'Никнейм'        
+        user_name: 'Никнейм'
+      photo:
+        photo: 'Фотография'       
       subscription:
         user: 'Пользователь'
         user_name: 'Никнейм'
         user_email: 'Адрес электронной почты'
       user:
+        avatar: 'Аватарка'
         name: 'Ваше имя'
         password: 'Пароль'
         password_confirmation: 'Подтвеждение пароля'
@@ -110,3 +114,7 @@ ru:
       subscriptions:
         created: 'Вы подписались на данное событие'
         destroyed: 'Подписка удалена'
+      photos:
+        error: 'Что-то не так с фоткой'
+        created: 'Вы добавили фотографию к событию'
+        destroyed: 'Вы удалили фотку'
